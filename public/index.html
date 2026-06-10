@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Front — Integração com a API</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    .card {
+      background: #1e293b;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      max-width: 520px;
+      width: 90%;
+      text-align: center;
+    }
+    h1 { margin: 0 0 0.5rem; font-size: 1.5rem; }
+    p.sub { margin: 0 0 1.5rem; color: #94a3b8; font-size: 0.9rem; }
+    button {
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover { background: #0ea5e9; }
+    #resposta {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: #0f172a;
+      border-radius: 8px;
+      min-height: 1.5rem;
+      font-family: ui-monospace, monospace;
+      font-size: 0.95rem;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Projeto Front-End</h1>
+    <p class="sub">Servido por Nginx em container · consome a API no Render</p>
+    <button onclick="chamarAPI()">Chamar API /v1</button>
+    <div id="resposta">Clique no botão para chamar a API.</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

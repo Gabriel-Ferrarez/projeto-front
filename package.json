@@ -1,0 +1,16 @@
+{
+  "name": "projeto-front",
+  "version": "1.1.0",
+  "description": "Front-end estático servido por Nginx em container - Projeto Segundo Bimestre Parte 2",
+  "scripts": {
+    "start": "echo \"Front estático: servido por Nginx (container) ou Vercel\""
+  },
+  "keywords": [
+    "frontend",
+    "nginx",
+    "docker",
+    "vercel"
+  ],
+  "author": "Gabriel Ferrarez",
+  "license": "MIT"
+}
