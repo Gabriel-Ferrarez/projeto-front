@@ -1,6 +1,6 @@
 // URL da API publicada no Render.
 // >>> AJUSTE para a sua URL após publicar o back-end no Render.
-const API_URL = "https://projeto-back.onrender.com"
+const API_URL = "https://projeto-back-rl7i.onrender.com"
 
 async function chamarAPI() {
   const el = document.getElementById("resposta")
